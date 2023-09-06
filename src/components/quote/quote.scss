@@ -1,0 +1,43 @@
+.quote{
+    background: url("../../assets/images/bg-1.png");
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+
+    .text{
+        width: 60%;
+        font-size: 18px;
+    }
+
+    button{
+        margin-top: 50px;
+        padding: 20px 50px;
+        background-color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 3%;
+        color: white;
+        transition: 1s;
+        font-size: 20px;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .quote{
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .quote{
+        height: 100vh;
+    }
+    
+}

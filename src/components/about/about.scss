@@ -1,0 +1,61 @@
+.about {
+    background-color: #ffb607;
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    .left {
+      button {
+        margin-top: 20px;
+        padding: 15px 30px;
+        background-color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 3%;
+        color: white;
+        transition: 1s;
+  
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+  
+      .text {
+        width: 100%;
+      }
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+  .about{
+    height: 100vh;
+    display: flex;
+    .right{
+      .img{
+        img{
+          width: 400px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
+  .about{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    .right{
+      .img{
+        img{
+          display: none;
+        }
+      }
+    }
+  }
+}
+  

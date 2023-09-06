@@ -1,0 +1,135 @@
+.top-footer{
+    background-color: #313131;
+    color: white;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 4fr);
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+
+        .card{
+            display: block;
+
+            .title{
+                font-size: 23px;
+            }
+
+            .text{
+                width: 50%;
+            }
+        }
+    }
+}
+
+.middle-footer{
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    input{
+        width: 30%;
+        padding-left: 10px;
+        padding-right: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #313131;
+        border: none;
+        border-bottom: white 1px solid;
+        margin-bottom: 50px;
+    
+    }
+    span{
+        color: white;
+        position: relative;
+        right: 25%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
+}
+.buttom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+
+    .top-footer{
+        height: 100vh;
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            .card{
+                margin: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+
+    .top-footer{
+        height: 180vh;
+        width: 100%;
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            .card{
+                margin: 50px;
+            }
+        }
+    }
+
+    .middle-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+    }
+    
+}
+
+@media (min-width:320px) and (max-width:480px) {
+
+    .top-footer{
+        height: 210vh;
+        width: 100%;
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            .card{
+                margin: 50px;
+            }
+        }
+    }
+
+    .middle-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+    }
+    
+}
